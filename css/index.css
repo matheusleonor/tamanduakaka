@@ -1,0 +1,159 @@
+/* Adiciona uma imagem de fundo no corpo da página */
+body {
+  /* background-image: url('caminho/para/imagem/fundo.jpg'); */
+  display: flex;
+  flex-direction: column; /* flexbox para alinhar footer no final */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-color: #B98CC6;
+  font-family: Arial, sans-serif;
+  color: #5F2D5D;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  padding-top: 50px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-bottom: none;
+  border-radius: 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-default {
+  background-color: #F2E8F2;
+}
+
+.nav.navbar-nav > li.active > a,
+.nav.navbar-nav > li.active > a:focus,
+.nav.navbar-nav > li.active > a:hover {
+  background-color: #5F2D5D;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #5F2D5D;
+  color: #fff;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a {
+  color: #5F2D5D;
+}
+
+.navbar-toggle {
+  border: none;
+}
+
+
+
+.jumbotron {
+  background-color: #F2E8F2;
+  color: #5F2D5D;
+}
+
+.kaka {
+  color: #E41487; /* cor desejada */
+}
+
+.titulo-sobre {
+  color: #5F2D5D;
+}
+
+#sobre {
+  background-color: #fff;
+  margin-top: 15%;
+  padding: 18px; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #F2E8F2;
+  color: #5F2D5D;
+  margin-top: 20%; /* empurra footer para o final */
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin: 0;
+}
+
+footer .social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+footer .social-icons a:hover {
+  transform: scale(1.1);
+}
+
+footer .social-icons a i {
+  font-size: 20px;
+  color: #5F2D5D;
+}
+
+
+/* Defina a largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+  display: none;
+}
+
+/* Defina a cor de fundo da barra de rolagem */
+::-webkit-scrollbar {
+  background-color: #f1f1f1;
+  scrollbar-width: thin;
+  scrollbar-color: #5F2D5D #f1f1f1;
+}
+
+/* Defina a cor do botão da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #5F2D5D;
+  border-radius: 5px;
+}
+
+/* Defina a cor de fundo do botão da barra de rolagem quando o usuário passa o mouse sobre ele */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #E41487;
+}
+
+.logo {
+  height: 30px; /* ajuste a altura do logo de acordo com suas necessidades */
+  margin-right: 10px;
+}

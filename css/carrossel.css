@@ -1,0 +1,115 @@
+.carousel-wrapper {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px; /* define uma margem inferior igual à superior */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.owl-carousel {
+  position: relative;
+  height: 120px;
+}
+
+.owl-carousel .item {
+  height: 400px;
+}
+
+.owl-carousel .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+.owl-carousel .owl-stage-outer {
+  padding: 0 10%;
+}
+
+.owl-carousel .owl-nav {
+  display: none;
+}
+
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+  position: relative;
+  margin: 0 10px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.owl-carousel .owl-prev:before,
+.owl-carousel .owl-next:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.owl-carousel .owl-next:before {
+  transform: translate(-50%, -50%) rotate(180deg);
+  border-color: transparent #fff transparent transparent;
+}
+
+.owl-carousel .owl-nav button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.owl-carousel .owl-dots {
+  position: relative;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.owl-carousel .owl-dot {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.owl-carousel .owl-dot.active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.item img {
+  cursor: grab;
+}
+
+.item img:active,
+.item img:focus {
+  cursor: grabbing;
+}

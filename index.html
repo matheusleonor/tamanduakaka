@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanduá Kaká Delícias Artesanais</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/carrossel.css">
+
+    <link rel="shortcut icon" href="img/tamandua.png" type="image/png">
+    <link rel="icon" href="img/tamandua.png" type="image/png">
+    
+  </head>
+  <body id="corpo">
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button id="hamburger-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" onclick="toggleHamburger()">
+            <span class="fa fa-bars"></span>
+          </button>          
+          <a class="navbar-brand" href="#homeLink">
+            <img class="logo" src="img/tamandua.png" alt="Logo da Tamanduá Kaká Delícias Artesanais">
+            Tamanduá <span class="kaka"> Kaká</span> Delícias Artesanais
+          </a>
+          </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre" class="mostrar-sobre">Sobre</a></li>
+            <!-- <li><a href="cardapio.html" target="_blank">Produtos</a></li> -->
+            <li><a href="cardapio.html">Produtos</a></li>
+          </ul>          
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Minha Conta</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Conteúdo da página -->
+
+    <header id="home" class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Bem-vindo à Tamanduá <span class="kaka">Kaká</span> Delícias Artesanais</h1>
+        <p class="lead">Aqui você encontra os melhores doces da cidade!</p>
+      </div>
+    </header>
+
+    <!-- Conteúdo da página -->
+    <div id="sobre" class="container text-center" style="display: none;">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="titulo-sobre">Sobre a Tamanduá Kaká Delícias Artesanais</h1>
+          <p>Seja bem-vindo à Tamanduá Kaká Delícias Artesanais, onde cada doce é preparado com carinho e dedicação para levar alegria ao seu paladar.</p>
+          <p>Com uma variedade de sabores únicos e irresistíveis, nossos doces são feitos com ingredientes de qualidade e preparados com a mais alta técnica para garantir a melhor experiência gastronômica.</p>
+          <p>Venha nos visitar e experimentar nossas delícias, temos certeza de que você vai se encantar!</p>
+        </div>
+      </div>
+    </div>    
+
+    <div id="Produtos" class="carousel-wrapper">
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img src="img/BoloDePoteDeCenoura.jpg" alt="Imagem 1" draggable="false"></div>
+        <div class="item"><img src="img/DoceDeGoiabinha.jpg" alt="Imagem 2" draggable="false"></div>
+        <div class="item"><img src="img/DoceDeGoiabinhaEmBolinha.jpg" alt="Imagem 3" draggable="false"></div>
+        <div class="item"><img src="img/BoloDePoteDeCenoura.jpg" alt="Imagem 4" draggable="false"></div>
+        <div class="item"><img src="img/DoceDeGoiabinha.jpg" alt="Imagem 5" draggable="false"></div>
+        <div class="item"><img src="img/DoceDeGoiabinhaEmBolinha.jpg" alt="Imagem 6" draggable="false"></div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="container-fluid bg-grey fixed-bottom">
+      <div class="container-fluid bg-grey mt-auto">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Horário de Funcionamento</h3>
+            <p>Segunda a Sexta: 11h às 12h</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Contato</h3>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Av. Dr. Cândido X. de Almeida e Souza, 200 - Centro Cívico, Mogi das Cruzes - SP, 08780-911</p>
+            <p><span class="glyphicon glyphicon-phone"></span> (11) 99572-0946</p>
+          <!--  <p><span class="glyphicon glyphicon-envelope"></span> doceria@tamanduakaka.com.br</p> -->
+          </div>
+          <div class="col-md-4">
+            <h3>Siga-nos</h3>
+            <ul class="social">
+              <a href="https://www.instagram.com/tamanduakaka/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Inclua o jQuery e o jQuery UI -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+
+<!-- Seu script -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/carrossel.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Inclua o CSS do Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- Inclua o tema padrão do Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Inclua a biblioteca do Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+  <!-- Biblioteca do Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
+
+  </body>
+</html>
